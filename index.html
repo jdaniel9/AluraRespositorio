@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class= "logoImg" src="/imagen/alura-removebg-preview.png" alt="logo_de_alura">
+        </div>
+        <section class="buttons">
+            <a id="a" href="https://github.com/jdaniel9" class="fa fa-github"></a>
+            <a id="b" href="https://twitter.com/danielb15v" class="fa fa-twitter"></a>
+            <a  href="https://www.linkedin.com/in/juan-daniel-bustos-velasquez-637771264/" class="fa fa-linkedin"></a>
+        </section>
+    </header>
+    <div class="contenedor">
+        
+        <div class="Derecha">
+            <textarea  id="texto1" placeholder="Ingrese el texto"></textarea>
+            <div class="analisis">
+                <p>Solo minusculas y sin acentos</p>
+                <div class="Derecha-button">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btnDesencriptar"  onclick="btndesEncriptar()">Desencriptar</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="Inzquierda">
+            <div class="resultado">
+                <img class="imagenderecha" src="/imagen/Muñeco.png" alt="muñeco-Alura">
+                <h3 class="texto">Ningun mensaje fue encontrado</h3>
+                <textarea class="texto2" placeholder="Ingrese el texto que desees encriptar o desencriptar." ></textarea>
+                <button class="copiar" type="button" onclick="copy()">copiar</button>
+            </div>
+            
+        </div>
+        
+    </div>
+<script type="text/javascript" src="/script/scripts.js"></script>
+    
+</body>
+
+</html>

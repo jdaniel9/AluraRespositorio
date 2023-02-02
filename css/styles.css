@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: url(/imagen/pexels-pixabay-531880.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div{
+    display: block;
+}
+header .logo{
+    width: 25px;
+}
+.logoImg{
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;
+    width: 100px;
+}
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content:flex-end;
+  }
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+#a, #b{
+    margin-right: 20px;
+  }
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+
+.contenedor{
+    width: 90%;/*ancho del figma*/
+    height: 80%;/*alto del figma*/
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+
+.Derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+textarea, .texto2{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    font-size: 25px;
+    resize: none;
+    
+}
+textarea:focus{
+    outline: none;
+}
+.Derecha textarea{
+    box-shadow: 5px 5px 250px 10px #000000;
+    border-radius: 15px;
+}
+#texto1{
+    color: aliceblue;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+.analisis{
+    display: block;
+}
+.Derecha p{
+    font-size: 16px;
+    color: white;
+    padding-top: 6px;
+}
+.Derecha-button{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.Derecha .btn-encriptar{
+    color: #fff;
+    flex: 1;
+    background: #0a3871;
+}
+.Derecha button, .Inzquierda button{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease 400ms;
+}
+.Derecha button:hover, .Inzquierda button:hover{
+    transform: scale(1.05);
+}
+.Derecha .btnDesencriptar{
+    border: 1px solid rgb(17, 121, 201);
+    color: rgb(17, 121, 201);
+    flex: 1;
+}
+
+
+
+.Inzquierda{
+    background: white;
+    padding: 15px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(195, 205, 216);
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 550px){
+    .contenedor{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .Derecha{
+        height: 100px;
+    }
+    
+    textarea, .texto2{
+        height: 100px;
+    }
+}
+.Inzquierda .imagenderecha{
+    width: 250px;
+}
+
+.texto{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.Inzquierda .copiar{
+    border: 1px solid rgb(17, 121, 201);
+    color: rgb(17, 121, 201);
+    margin: 20px 0;
+    display: none;
+}
+
+
+
